@@ -15,22 +15,22 @@ int main(){
     printf("Escolha um indice:\n 1. Crescente\n 2. Decrescente\n 3. Maior valor no meio. ");
     scanf("%d", &i);
 
-    if(a < b && a < c && b < c){
+    if(a < b && b < c){
         menor = a; meio = b; maior = c;
     }
-    else if(c < a && c < b && a < b){
+    else if(c < a && a < b){
         menor = c; meio = a; maior = b;
     }
-    else if(b < c && b < a && c < a){
+    else if(b < c && c < a){
         menor = b; meio = c; maior = a;
     }
-    else if(c < b && c < a && b < a){
+    else if(c < b && b < a){
         menor = c; meio = b; maior = a;
     }
-    else if(a < c && a < b && c < b){
+    else if(a < c && c < b){
         menor = a; meio = c; maior = b;
     }
-    else if(b < a && b < c && a < c){
+    else if(b < a && a < c){
         menor = b; meio = a; maior = c;
     }
 
@@ -46,4 +46,3 @@ int main(){
     }
 
 }
-
